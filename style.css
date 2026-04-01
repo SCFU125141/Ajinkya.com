@@ -1,0 +1,89 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #4CAF50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #eee;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
