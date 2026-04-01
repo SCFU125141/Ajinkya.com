@@ -1,0 +1,15 @@
+// Highlight nav links on scroll
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("header nav a");
+
+window.addEventListener("scroll", () => {
+  let scrollPos = window.scrollY + 100;
+
+  sections.forEach(section => {
+    if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+      navLinks.forEach(link => link.classList.remove("active"));
+      const activeLink = document.querySelector(`header nav a[href="#${section.id}"]`);
+      if (activeLink) activeLink.classList.add("active");
+    }
+  });
+});
